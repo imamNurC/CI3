@@ -68,7 +68,7 @@
                     <button type="submit" class="btn btn-primary">Submit</button>
                     <button type="reset" class="btn btn-primary">Reset</button>
                     <a href="<?php echo base_url(); ?>index.php/form/mhs" class="btn btn-primary">Kembali</a>
-
+                    <a href="<?php echo base_url(); ?>index.php/form/matkul2" class="btn btn-primary">Design add data ke 2</a>
                 </div>
                 <div class="col col-sm-8 msg">
                     <?php echo "<h2>" . validation_errors('<div class="error">', '</div>') . "</h2>"; ?>
