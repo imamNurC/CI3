@@ -58,15 +58,17 @@ class Matkul2 extends CI_Controller
         }else{
         echo json_encode(array("status" => false));
         }
-        }
-        public function update(){
+    }
+
+
+    public function update(){
         $kd_mk=$this->input->post('hdnMatkulId');
-        $matkul=$this->input->post('matkul_edit');
-        $smt=$this->input->post('smt_edit');
+        // $matkul=$this->input->post('matkul_edit');
+        // $smt=$this->input->post('smt_edit');
         $sks=$this->input->post('sks_edit');
         $data=array(
-        'matkul'=>$matkul,
-        'semester'=>$smt,
+        // 'matkul'=>$matkul,
+        // 'semester'=>$smt,
         'sks'=>$sks
         );
         $where=array('kd_mk'=>$kd_mk);

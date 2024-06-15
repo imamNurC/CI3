@@ -113,15 +113,8 @@
             </div>
             <form id="updateMatkul" name="updateMatkul" action="<?php echo site_url('form/matkul2/update'); ?>" method="post">
                 <div class="modal-body">
-                    <input type="hidden" name="hdnMatkulId" id="hdnMatkulId" />
-                    <div class="form-group">
-                        <label for="matkul">Mata Kuliah :</label>
-                        <input type="text" class="form-control" id="matkul_edit" placeholder="Enter Mata Kuliah" name="matkul_edit">
-                    </div>
-                    <div class="form-group">
-                        <label for="smt">Semester :</label>
-                        <input type="text" class="form-control" id="smt_edit" placeholder="Enter Semester" name="smt_edit">
-                    </div>
+                    <input type="text" name="hdnMatkulId" id="hdnMatkulId" />
+                  
                     <div class="form-group">
                         <label for="sks">SKS :</label>
                         <input type="text" class="form-control" id="sks_edit" placeholder="Enter Semester" name="sks_edit">
@@ -177,8 +170,8 @@
                 const result = JSON.parse(JSON.stringify(res));
                 //console.log(result.data[0]['kdmk']);
                 $('#updateMatkul #hdnMatkulId').val(result.data[0]['kd_mk']);
-                $('#updateMatkul #matkul_edit').val(result.data[0]['matkul']);
-                $('#updateMatkul #smt_edit').val(result.data[0]['semester']);
+                // $('#updateMatkul #matkul_edit').val(result.data[0]['matkul']);
+                // $('#updateMatkul #smt_edit').val(result.data[0]['semester']);
                 $('#updateMatkul #sks_edit').val(result.data[0]['sks']);
             },
             error: function(data) {
